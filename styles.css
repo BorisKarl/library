@@ -1,0 +1,92 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+h2 {
+    font-family: monospace;
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns:minmax(100px, max-content) repeat(auto-fill, 200px);
+    grid-template-rows: minmax(100px, max-content) repeat(auto-fill, 200px);
+    gap: 20px;
+    font-size: 1.5em;
+    width: 100vw;
+    height: 100vw;
+    background-color: aqua;
+}
+
+.container > div {
+    font-family: monospace;
+    background-color: bisque;
+    width: 200px;
+}
+
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+#flex_container {
+    display: flex;
+    justify-content: center;
+}
+
+#grid_container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,1fr);
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+
+#grid_container > input {
+    width: fit-content;
+    height: fit-content;
+}
+
+#read_it_input {
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card {
+    background-color: bisque;
+    width: 200px;
+}
+
+
+#custom_card {
+    background-color: bisque;
+    width: 200px;
+}
+
+#custom_card > ul > li {
+    list-style-type: none;
+    font-family: monospace;
+}
+
+#user-card {
+      /* display: hidden;*/
+    font-family: monospace;
+    background-color: bisque;
+    width: 200px;
+}
+
+#user-card > ul > li  {
+   
+    list-style-type: none;
+}
