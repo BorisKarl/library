@@ -76,7 +76,11 @@ function addBook(book) {
     user_autor.textContent = input_author.value;
     user_seiten.textContent = input_pages.value;
     user_read.textContent = checkRead(input_read);
+    const read_button = document.getElementById('reddit_button');
+    read_button.addEventListener('click', toggleRead);
+    read_button.addEventListener('click', alert("Help"));
     //addToLibrary();
+
 
     function toggleRead() {
         if (user_read.textContent = "You read this book") {
@@ -107,6 +111,8 @@ function reset() {
 
 
 
+
+
 function checkRead(x) {
     let y = "";
     if (x.checked === true) {
@@ -117,3 +123,15 @@ function checkRead(x) {
     }
     return y;
 }
+
+
+ //console.log(input_read.value)
+/*Objekt erstellen, Objekt speichern im array, array durchlaufne und damit grid bilden
+Was haben wir gelernt?
+Es gibt einerseits das DOM ELement, dh Darstellung im Browser.
+Dann unabhängig davon das Array, das zu rSpeicherung der Daten dient.
+DOM und Array muss untesxchiedlich konstruiert und Verkettet werden, ebenso unterschiedlich werden Elemente entfernt.
+removechild und splice bilden hier die Grundpfeiler des Entfernens.
+eine for Schleife und ein Konstruktor bilden die Grundlage der Erschaffung
+
+*/
