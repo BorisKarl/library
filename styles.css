@@ -10,6 +10,11 @@ h2 {
     text-align: center;
 }
 
+.button_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .container {
     padding: 50px;
