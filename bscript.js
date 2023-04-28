@@ -107,55 +107,6 @@ function reset() {
 
 
 
-//Book constructor
-
-
-
-
-
-
-
-/* //Code snippet catqueencodes
-//Book Constructor
-class Book {
-    constructor(title, author, pages, read) {
-        this.title = form.title.value; 
-        this.author = form.author.value; 
-        this.pages = form.pages.value + 'pg'; 
-        this.read = form.read.checked; 
-    }
-}
-
-//creates book from Book Constructor, adds to library
-let myLibrary = [];
-let newBook;
-
-function addBookToLibrary() {
-    event.preventDefault();
-    popUpForm.style.display = 'none';
-
-    newBook = new Book(title, author, pages,read); 
-    myLibrary.push(newBook); 
-    setData();  //saves updated array in local storage
-    render(); 
-    form.reset();
-} 
-
-
-
-//Library Array
-function addToLibrary(){
-const myLibrary = [];
-let newBook = {};
-    newBook = new Book(input_title.value, input_author.value, input_pages.value, checkRead(input_read));
-    myLibrary.push(newBook);
-    console.log(myLibrary);
-   
-}
-*/
-
-
-
 function checkRead(x) {
     let y = "";
     if (x.checked === true) {
@@ -166,15 +117,3 @@ function checkRead(x) {
     }
     return y;
 }
-
-
- //console.log(input_read.value)
-/*Objekt erstellen, Objekt speichern im array, array durchlaufne und damit grid bilden
-Was haben wir gelernt?
-Es gibt einerseits das DOM ELement, dh Darstellung im Browser.
-Dann unabhängig davon das Array, das zu rSpeicherung der Daten dient.
-DOM und Array muss untesxchiedlich konstruiert und Verkettet werden, ebenso unterschiedlich werden Elemente entfernt.
-removechild und splice bilden hier die Grundpfeiler des Entfernens.
-eine for Schleife und ein Konstruktor bilden die Grundlage der Erschaffung
-
-*/
