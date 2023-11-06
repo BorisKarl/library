@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="bscript.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Library-app</title>
 </head>
 <body>
@@ -16,13 +16,13 @@
 <div id="flex_container" class="hide">
     <div id="grid_container">
       <label for="author">Author:</label>
-      <input type="text" id="input_author" >
+      <input type="text" id="input_author" required>
       <label for="title">Title:</label>
-      <input type="text" id="input_title">
+      <input type="text" id="input_title" required>
       <label for="pages">Pages:</label>
-      <input type="number" id="input_pages">
+      <input type="number" id="input_pages" required>
       <label for="read">Read it?</label>
-      <input type="checkbox" id="input_read">
+      <input type="checkbox" id="input_read" required>
       <button id="submit">Submit</button>
   </div>
 </div>

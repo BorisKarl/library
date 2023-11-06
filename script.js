@@ -86,7 +86,7 @@ function addBook(book) {
         if (user_read.textContent = "You read this book") {
             user_read.textContent = "You did not read this book"
         }
-        if(user_read.textContent = "You did not read this book")
+        else
         {
             user_read.textContent = "You read this book";
         }
